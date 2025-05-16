@@ -1,3 +1,4 @@
+範例影片連結：https://drive.google.com/file/d/1OeqwB6IbJBxUWiS3SB4G3t79NsL_Sqma/view?usp=sharing
 # Ring Vibration Analyzer 圓環振動模態分析器
 
 這個專案提供一個基於 Python 的工具 `RingVibrationAnalyzer`，用於從影片中觀察和分析圓環的振動特性。它可以追蹤圓環的運動、測量其屬性，並對其振動進行頻率分析。
@@ -15,8 +16,8 @@
         比例尺校準：互動式校準像素與實際距離的比例。
     * **Region of Interest (ROI) Selection**: Interactively select an ROI for analysis.
         感興趣區域 (ROI) 選擇：互動式選擇分析區域。
-    * **Perspective Calibration**: Interactively correct perspective distortion (optional).
-        透視校準：互動式校正透視變形 (可選)。
+ 
+    
 * **Ring Detection & Tracking**:
     圓環偵測與追蹤：
     * Standard and enhanced thin ring detection algorithms.
