@@ -61,7 +61,7 @@
 ---
 ## ⚙️ Requirements 需求
 
-* Python 3.x
+* Python 3.9.21
 * OpenCV (`cv2`)
 * NumPy (`numpy`)
 * Matplotlib (`matplotlib`)
@@ -82,7 +82,7 @@ bash
     
 
 2.  Install the required Python packages:
-    安裝所需的 Python 套件：Python 3.9.21
+    安裝所需的 Python 套件：
     
 bash
     
@@ -211,6 +211,27 @@ This command will run the analyzer on `my_video.mp4`, allow you to select an ROI
   * **Esc**: Cancel calibration or current selection.
     **Esc**：取消校準或目前選擇。
 
+**ROI (Region of Interest) Selection 感興趣區域 (ROI) 選擇:**
+* **Mouse Drag (Left Button)**: Draw the rectangular ROI. **滑鼠拖曳 (左鍵)**：繪製矩形 ROI。
+* **Enter**: Confirm the selected ROI. **Enter**：確認選擇的 ROI。
+* **Esc**: Cancel ROI selection. **Esc**：取消 ROI 選擇。
+  
+**Origin Calibration 特定控制 (除了通用控制外)**
+* Instructions are primarily displayed in the terminal. Shift+Click sets the origin. 操作說明主要顯示在終端機中。Shift+點擊設定原點。
+* The window displays the current view with pixel grid at higher zoom levels. 視窗在高縮放級別下顯示帶有像素網格的目前視圖。
+  
+**Frame Range Selection 影格範圍選擇**
+* **Left/Right Arrow Keys**: Move one frame backward/forward. **左/右方向鍵**：向後/前移動一個影格。
+* **PgUp or 's'**: Move backward by approximately one second of frames. **PgUp 或 's'**：向後移動約一秒鐘的影格數。
+* **PgDn or 'w'**: Move forward by approximately one second of frames. **PgDn 或 'w'**：向前移動約一秒鐘的影格數。
+* **Keys '1' through '9'**: Jump to 10% through 90% of the video duration, respectively. **數字鍵 '1' 到 '9'**：分別跳轉到影片長度的 10% 到 90% 位置。
+* **'0'**: Jump to the beginning of the video. **'0'**：跳轉到影片開頭。
+* **'-'**: Jump to the end of the video. **'-'**：跳轉到影片結尾。
+* **'R'**: Set the current frame as the start frame for processing. **'R'**：將目前影格設定為處理的起始影格。
+* **'E'**: Set the current frame as the end frame for processing. **'E'**：將目前影格設定為處理的結束影格。
+* **Enter**: Confirm the selected start and end frames. **Enter**：確認選擇的起始和結束影格。
+* **Esc**: Cancel frame range selection. **Esc**：取消影格範圍選擇。
+* The window displays the current frame, selected range on a progress bar, and time information. 視窗會顯示目前影格、進度條上選擇的範圍以及時間資訊。
 -----
 
 ## 📊 Output 輸出
@@ -223,4 +244,5 @@ This command will run the analyzer on `my_video.mp4`, allow you to select an ROI
     **文字檔案**：振動分析摘要。
   * **JSON files**: Saved settings for calibrations, ROI, etc.
     **JSON 檔案**：儲存的設定，用於校準、ROI 等。
-  * **MP4 video**: Timelapse video from contour snapshots (if snapshots are enabled and
+  * **MP4 vide**o: Timelapse video from contour snapshots (if snapshots are enabled and video is generated). **MP4 影片**：從輪廓快照產生的縮時影片 (如果啟用快照並產生影片)。
+  * All outputs are saved in a timestamped directory within the specified output directory (or a vibration_output_YYYYMMDD_HHMMSS directory by default). 所有輸出都儲存在指定輸出目錄中的帶時間戳的目錄內 (預設情況下為 vibration_output_YYYYMMDD_HHMMSS 目錄)。
