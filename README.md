@@ -75,12 +75,12 @@
     複製儲存庫：
     
 bash
-    git clone [https://your-repository-url.git](https://your-repository-url.git)
+    git clone [https://raw.githubusercontent.com/stephen01234/ring_vibration_analyzer/refs/heads/main/thin_ring_vibration_analyzer.py](https://raw.githubusercontent.com/stephen01234/ring_vibration_analyzer/refs/heads/main/thin_ring_vibration_analyzer.py)
     cd your-repository-directory
     
 
 2.  Install the required Python packages:
-    安裝所需的 Python 套件：
+    安裝所需的 Python 套件：Python 3.9.21
     
 bash
     pip install opencv-python numpy matplotlib scipy pandas
