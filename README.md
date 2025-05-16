@@ -1,4 +1,4 @@
-# 範例影片連結：https://www.youtube.com/watch?v=Sd6rgMGhDEQ&ab_channel=ChenChangShih
+### 範例影片連結：https://www.youtube.com/watch?v=Sd6rgMGhDEQ&ab_channel=ChenChangShih
 # Ring Vibration Analyzer 圓環振動模態分析器
 
 這個專案提供一個基於 Python 的工具 `RingVibrationAnalyzer`，用於從影片中觀察和分析圓環的振動特性。它可以追蹤圓環的運動、測量其屬性，並對其振動進行頻率分析。
