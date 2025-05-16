@@ -75,7 +75,9 @@
     複製儲存庫：
     
 bash
-    git clone [https://raw.githubusercontent.com/stephen01234/ring_vibration_analyzer/refs/heads/main/thin_ring_vibration_analyzer.py](https://raw.githubusercontent.com/stephen01234/ring_vibration_analyzer/refs/heads/main/thin_ring_vibration_analyzer.py)
+    
+    git clone [https://github.com/stephen01234/ring_vibration_analyzer](https://github.com/stephen01234/ring_vibration_analyzer)
+    
     cd your-repository-directory
     
 
@@ -83,6 +85,7 @@ bash
     安裝所需的 Python 套件：Python 3.9.21
     
 bash
+    
     pip install opencv-python numpy matplotlib scipy pandas
     
 
@@ -94,7 +97,7 @@ Run the script from the command line, providing the path to the video file.
 從命令列執行腳本，並提供影片檔案的路徑。
 
 ```bash
-python your_script_name.py path/to/your/video.mp4 [options]
+python thin_ring_vibration_analyzer.py path/to/your/video.mp4 [options]
 ````
 
 **Command-Line Arguments 命令列參數:**
@@ -159,7 +162,7 @@ python your_script_name.py path/to/your/video.mp4 [options]
 **Example 範例:**
 
 bash
-python your_script_name.py my_video.mp4 --roi --calibrate --origin --save-settings my_settings.json
+python thin_ring_vibration_analyzer.py my_video.mp4 --roi --calibrate --origin --save-settings my_settings.json
 
 This command will run the analyzer on `my_video.mp4`, allow you to select an ROI, calibrate the scale, set the origin, and then save these settings to my_settings.json before starting the analysis.
 此命令將在 my_video.mp4 上執行分析器，允許您選擇 ROI、校準比例尺、設定原點，然後在開始分析之前將這些設定儲存到 `my_settings.json`。
